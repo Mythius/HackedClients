@@ -1,6 +1,6 @@
 var HOUESHOLD;
 function download(filename,text){
-    var e=create('a');
+    var e=document.createElement('a');
     e.href='data:text/plain;charset=utf-8,'+encodeURIComponent(text);
     e.download=filename;
     e.style.display='none';
